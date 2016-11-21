@@ -1,0 +1,37 @@
+ASSIGNMENT 5
+
+Arrays
+
+The array is another powerful and useful language feature. Where the loop allows you to do repetitive operations easily, the array allows you to do operations on many variables with the same statements. This means you don't have to duplicate statements when you want to repeat manipulations on different variables. Arrays are most often used with loops so that the same statements are carried out on each of many variables.
+
+One of the most frequent uses of arrays in psychology is to handle items of psychological scales and tests. Our practice and research often involves administering many items to individuals with our batteries of tests. All items can be put into an array, and operations such as scoring can be done easily. In this assignment we will use arrays to help accomplish an important task--screen for errors in data sets.
+
+The first step of this assignment is to read test data from four separate files, one for each test, for a sample of subjects. In this case, these data are fictitious. Below is a description of the files. To download, click on each name. You can then merge the files together, using the ID number, which is the first variable in each file. Then write a program to search for out of range or impossible values. You should do two things.
+
+1. Write a report that lists erroneous variable values by the subject ID. In theory, you could then go back and correct the data. Consider this a sample of college students. Be sure to flag any age values that seem unlikely in your report.
+
+2. Change the erroneous values to missing by replacing them with a period, which means missing in SAS. Then create four new output files, containing the same variables as the originals, but having new names. These new output files could be used in future analyses with errors corrected (or at least removed). This is a very common task, especially when we have files too large to easily do this by hand.
+
+Data Files
+
+For all four data files, the first 2 columns contain the ID numbers, assume on same college student subjects.
+
+File Name
+
+Contents
+
+scale1.dat
+
+ID 1-2; Age 3-4, 10 items that range from 1 to 4
+
+scale2.dat
+
+ID 1-2; 8 items that range from 1 to 6
+
+scale3.dat
+
+ID 1-2; 12 items that range from 1 to 8
+
+scale4.dat
+
+ID 1-2; 4 items that range from 0 to 1; 4 items that range from 1 to 4

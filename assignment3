@@ -1,0 +1,13 @@
+ASSIGNMENT 3
+
+Branching and Loops with SAS
+
+This assignment is designed to give you some experience with branching and loops. In your text, Program 5-2 shows how to use a flag to divide a sample in half. To make the programming more efficient and easier to debug, it used LINK statements. In this assignment you are to expand on this program. The problem is to compare a smaller random sample of a file to the remaining part of the file. For each subsample, compute a correlation coefficient, and then compute the significance for each using the appropriate formula. Use gsapp2.dat from Assignment 2, and use both GRE scores, quantitative and verbal. Then do the following:
+
+1. Divide the sample into two parts, with one part consisting of one-third of the sample, and the other the remaining two-thirds. This can be done with a flag.
+
+2. Within the same data step, compute correlations for each group. For each correlation, compute the appropriate t-test to see if it is significantly different from 0.
+
+Be sure to use LINK. By the way, dividing a sample into two unequal parts is commonly done for cross-validation studies.
+
+See the Tips section for some hints that may help with this assignment.

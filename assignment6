@@ -1,0 +1,7 @@
+ASSIGNMENT 6
+
+Putting It All Together
+
+This last assignment asks you to perform a very common task, that involves many of the programming principles we've covered. You will be given a real data from two scales, the Interpersonal Conflict At Work Scale (ICAWS) and the Organizational Constraints Scale (OCS). Your task is to score both and, do some analysis with those scores. What makes this a bit more difficult is a scattering of missing data on individual items. You must replace them with the mean of the completed items. The general approach is in your book's program 7-1.
+
+The data are in a file stress.dat. It contains an ID number in the first 3 columns, then gender (1 = male, 2 = female), employment status (1 = part-time, 2 = full-time), the 4 ICAWS and 11 OCS items, each in one column. You should score each scale, replacing missing items with the mean of existing items for each particular scale for that subject. Using PROC CORR compute coefficient alphas for each subscale. Use PROC MEANS to compute descriptive statistics. Use PROC FREQ to build a frequency distribution for each subscale. Be sure to round to whole numbers first. Finally, compute correlations among the four variables in the study (omit ID number), and a multiple regression (use PROC REG) of the ICAWS (criterion variable) on the other three variables. 

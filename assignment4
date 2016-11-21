@@ -1,0 +1,17 @@
+ASSIGNMENT 4
+
+Loops
+
+The loop is one of the most powerful and useful features of programming. It enables you to accomplish any number of repetitive actions with a small number of commands. An entire field of simulations is made possible because of the loop, which allows you to generate data with known characteristics, and investigate behavior of various statistics. The book gives you an example with programs 6.1 and 6.3. This assignment asks you to conduct your own simulation. One word of warning. Once you begin simulating the behavior of your favorite (or not so favorite) statistics, you will never view them in quite the same way again.
+
+Your task is to simulate the rolling of dice. It builds on Program 6.1 that simulates the flipping of a coin. There are two parts. First, take 6.1 and convert it from the flipping of a coin to the rolling of a die. Instead of two possible outcomes, there will be 6. Second, expand the program to roll two dice, and then add the results.
+
+Part A in Detail
+
+As in 6.1, use a random number generator and IF statements to determine for each "roll" which number comes up. Do 120 trials and sum the number of 1s, 2s, etc. See how far off your simulation is from exactly 20 of each that would be expected by chance.
+
+Part B in Detail
+
+Expand the program you ran in Part A to roll two dice rather than 1. Then sum the results for each pair of rolls. Compute the number of 2s, 3s, etc. that you find. Again do 120 trials. How far off is this from what would be expected by chance? Hint: You won't expect an equal number this time.
+
+Just for fun, try the following. Run Part A with varying numbers of "flips" to see how far off of expected values you get. Try rolling a fairly small number, e.g., 24. Then try a very large number, e.g., 120,000. See how close the percentages get to what's expected. It's also interesting with small samples to see the variability from run to run.

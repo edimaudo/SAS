@@ -1,0 +1,37 @@
+ASSIGNMENT 1
+
+Inputting and Outputting Data
+
+The first assignment is concerned with how to input data from within the SAS program itself, or from an external file, and how to output it. There are two parts, so be sure to combine them into a single run when you submit it to me.
+
+Part A: Formatted Listing of Employment Data
+
+Set up a SAS data step using a DATA command, and input 4 variables by embedding the data in your program, using a CARDS (or DATALINES) statement. See below for the data you should use. Use PUT statements to display data for the various subjects, but with appropriate labeling (i.e., column headings). There should be a beginning statement at the top explaining the nature of the data, and a closing footer statement at the bottom. The contents of the header and footer statements are up to you. The column headings should line up with the data so it is easy to see which variables are which. As a check to see if the data printed correctly, also run a PROC PRINT.
+
+The four variables are, in order:
+
+Nationality: M = Mexico, U = U.S.
+
+Employment Status: F = full-time, P = part-time
+
+Income: Dollars/month
+
+Work experience: Years
+
+Use the following data for 6 subjects:
+
+M F 2050 6
+
+M P 640 8
+
+U P 550 4
+
+U F 1020 8
+
+U F 2440 2
+
+U F 1880 12
+
+Part B: Telemarketer Weekly Sales Performance Report
+
+Download the data file gsapp1.dat by clicking on it. With most browsers you can save it by going to File and then Save. Be careful that some browsers (e.g., Netscape) will put a funny return character at the end of each line that may or may not be visible with the software you use to look at the file. Write a program to read this external file. Write a narrative report using PUT statements, and inserting the appropriate numbers where needed. This fictitious data set contains sales performance information for 6 telemarketers. In order, the data file contains Name, Number of units sold last week, Dollar value of units sold last week, Hours worked last week, Number of complaints filed about the person by customers last week. Name is a character variable with a length of 14. The other variables are numeric with 3, 4, 2, and 2 digits, respectively. There should be a separate "report" for each person. Your report should be something like "Our first telemarketer is Robert White, who has…" Be as creative as you wish, as long as you weave the 5 variables into the narrative, and summarize each person's performance.
