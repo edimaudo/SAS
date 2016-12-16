@@ -1,0 +1,8 @@
+
+
+
+DATA gradApplication;
+  INFILE "/folders/myfolders/SAS/gsapp1.dat";
+  
+  /*INPUT make $ 1-5 model $ 6-12 mpg 13-14 weight 15-18 price 19-22;*/
+RUN;
