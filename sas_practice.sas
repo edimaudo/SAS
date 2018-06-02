@@ -20,4 +20,30 @@ set proj.stat;
 Pred = Current * RAND('UNIForm', 0.9, 1.1);
 run;
 
+Data groceryinfo;
+set proj.grocery;
+New = round(Price * (1 - (DISCOUNT/100)),0.01) ;
+RUN;
+
+Data numberround;
+set proj.numbers;
+RandNoNew = floor(RandNo*10)/10;
+run;
+
+Data phoneinfo;
+set proj.phonelist;
+telinfo = substr(tel,1,3);
+run;
+
+Data namelen;
+set proj.firstname;
+namelength = length(name);
+run;
+
+Data firstlast;
+set proj.firstlast;
+first_last = catx(" ",First,Last);
+run;
+
+
  
