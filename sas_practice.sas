@@ -55,4 +55,13 @@ set proj.mathexam;
 exam_result = substr(Comment,indexc(Comment,"0123456789"),2);
 run;
 
+Data symptomcheck;
+set proj.symptoms;
+if index(LOWCASE(Symptoms),'fatigue') <> 0 then symptomcheck = "Yes";
+if index(LOWCASE(Symptoms),'fatigue') = 0 then symptomcheck = "No"; 
+run;
+
+
+
+
  
