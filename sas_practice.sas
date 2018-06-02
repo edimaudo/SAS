@@ -75,7 +75,14 @@ run;
 
 Data phonebillcalc;
 set proj.phonebill;
-minutescalc = if minutes > 200 then 0.01*(minutes - 200)
+if minutes > 200 then minutescalc = 0.1*(minutes - 200);
+else minutescalc = 0;
+if messages > 25 then messagecalc = 0.5*(messages - 25);
+else messagecalc = 0;
+if data > 1000 then datacalc = 0.05*(data - 1000);
+else datacalc = 0;
+totalbill = 30 + minutescalc + messagecalc + datacalc;
+run;
 
 
 
