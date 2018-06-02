@@ -99,6 +99,10 @@ set work.tempexpensecheck;
 where claimassignment = 5;
 run;
 
+Data marriagecheck;
+set proj.date;
+age_marriage = floor(((MARRIAGEDATE - BIRTHDATE)/365.25)*10)/10; 
+RUN;
 
 
 
