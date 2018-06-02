@@ -22,7 +22,12 @@ run;
 
 Data groceryinfo;
 set proj.grocery;
-New = round(Price * (1 - (DISCOUNT/100)),0.001) ;
+New = round(Price * (1 - (DISCOUNT/100)),0.01) ;
 RUN;
+
+Data numberround;
+set proj.numbers;
+RandNoNew = floor(RandNo*10)/10;
+run;
 
  
