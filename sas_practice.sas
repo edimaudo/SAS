@@ -50,4 +50,9 @@ set proj.mathexam;
 exam_result = substr(Comment,length(Comment)-2,length(Comment));
 run;
 
+Data mathExamInfo2;
+set proj.mathexam;
+exam_result = substr(Comment,indexc(Comment,"0123456789"),2);
+run;
+
  
