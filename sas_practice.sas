@@ -104,6 +104,12 @@ set proj.date;
 age_marriage = floor(((MARRIAGEDATE - BIRTHDATE)/365.25)*10)/10; 
 RUN;
 
+Data nameinfo;
+set proj.name;
+firstname = substr(name,1,index(name," "));
+lastname = substr(name,index(name," "),length(name) - index(name," ") + 1) ;
+run;
+
 
 
  
