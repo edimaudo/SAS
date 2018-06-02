@@ -45,5 +45,9 @@ set proj.firstlast;
 first_last = catx(" ",First,Last);
 run;
 
+Data mathExamInfo; 
+set proj.mathexam;
+exam_result = substr(Comment,length(Comment)-2,length(Comment));
+run;
 
  
