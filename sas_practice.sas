@@ -110,6 +110,15 @@ firstname = substr(name,1,index(name," "));
 lastname = substr(name,index(name," "),length(name) - index(name," ") + 1) ;
 run;
 
+Data classifyUPC;
+set proj.product;
+if substr(barcode,1,1) = 2 then producttype = "Meat, fruits, Vegetables";
+else if substr(barcode,1,1) = 3 then producttype = "Drug";
+else if substr(barcode,1,1) = 4 then producttype = "Loyalty Card";
+else if substr(barcode,1,1) = 5 or substr(barcode,1,1)  =  9   then producttype = "Coupon";
+else producttype = "General";
+run;
+
 
 
  
