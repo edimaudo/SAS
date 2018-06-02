@@ -30,4 +30,9 @@ set proj.numbers;
 RandNoNew = floor(RandNo*10)/10;
 run;
 
+Data phoneinfo;
+set proj.phonelist;
+telinfo = substr(tel,1,3);
+run;
+
  
