@@ -61,6 +61,12 @@ if index(LOWCASE(Symptoms),'fatigue') <> 0 then symptomcheck = "Yes";
 if index(LOWCASE(Symptoms),'fatigue') = 0 then symptomcheck = "No"; 
 run;
 
+Data subsetmargarin;
+set sashelp.margarin;
+KEEP HOUSEID CHOICE BRAND;
+rename HOUSEID = ID;
+run;
+
 
 
 
