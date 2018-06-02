@@ -128,7 +128,21 @@ Data productNumner;
 set proj.Product;
 where substr(barcode,7,11) =  '36750';
 run;     
-          
+  
+Data checkDigit;
+set proj.product;
+output = mod(3*(substr(barcode,1,1) + substr(barcode,3,1) + substr(barcode,5,1) + substr(barcode,7,1) +
+substr(barcode,9,1)) + (substr(barcode,2,1) + substr(barcode,4,1) + substr(barcode,6,1) + substr(barcode,8,1) + 
+substr(barcode,10,1)),10);
+if output <> 0 then tempresult = 10 - output;
+else tempresult = 0;
+if tempresult = substr(barcode,12,1) then result = "Correct";
+else result = "Wrong";
+run;
+
+
+run;
+
 
 
  
