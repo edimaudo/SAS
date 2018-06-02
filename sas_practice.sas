@@ -58,7 +58,7 @@ run;
 Data symptomcheck;
 set proj.symptoms;
 if index(LOWCASE(Symptoms),'fatigue') <> 0 then symptomcheck = "Yes";
-if index(LOWCASE(Symptoms),'fatigue') = 0 then symptomcheck = "No"; 
+else symptomcheck = "No"; 
 run;
 
 Data subsetmargarin;
@@ -66,6 +66,18 @@ set sashelp.margarin;
 KEEP HOUSEID CHOICE BRAND;
 rename HOUSEID = ID;
 run;
+
+Data carchoice;
+set sashelp.cars;
+if MSRP < 40000 then cartype = "Economy";
+else cartype = "Luxury";
+run;
+
+Data phonebillcalc;
+set proj.phonebill;
+minutescalc = if minutes > 200 then 0.01*(minutes - 200)
+
+
 
 
 
