@@ -90,6 +90,14 @@ set proj.RACE;
 avgcompletiontime = (Lap1 + Lap2 + Lap3 + Lap4 + Lap5) / 5;
 run;
 
+Data tempexpensecheck;
+set proj.expense;
+claimassignment = floor(RAND('UNIForm', 1, 10));
+run;
+data expensecheck;
+set work.tempexpensecheck;
+where claimassignment = 5;
+run;
 
 
 
