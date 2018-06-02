@@ -119,6 +119,10 @@ else if substr(barcode,1,1) = 5 or substr(barcode,1,1)  =  9   then producttype 
 else producttype = "General";
 run;
 
+Data manufacturerNumber;
+set proj.PRODUCT;
+manufacturer = substr(barcode,2,5);
+run;
 
 
  
