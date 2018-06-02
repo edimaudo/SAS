@@ -85,6 +85,11 @@ totalbill = 30 + minutescalc + messagecalc + datacalc;
 run;
 
 
+Data completionTime;
+set proj.RACE;
+avgcompletiontime = (Lap1 + Lap2 + Lap3 + Lap4 + Lap5) / 5;
+run;
+
 
 
 
