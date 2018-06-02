@@ -124,5 +124,11 @@ set proj.PRODUCT;
 manufacturer = substr(barcode,2,5);
 run;
 
+Data productNumner;
+set proj.Product;
+where substr(barcode,7,11) =  '36750';
+run;     
+          
+
 
  
